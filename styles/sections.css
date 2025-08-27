@@ -21,6 +21,11 @@
             bottom: 0;
 
             padding: 24px;
+
+            /* Vai observar se tem alguma tag dentro dele com text-lg */
+            &:has(.text-lg) {
+                padding: 12px;
+            }
         }
 
         h2 {
