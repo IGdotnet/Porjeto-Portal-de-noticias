@@ -23,6 +23,9 @@ section {
 }
 
 #featured {
+
+    grid-area: featured;
+
     img {
         height: 100%;
         object-fit: cover;
@@ -73,6 +76,8 @@ section {
 
 #weekly {
 
+    grid-area: weekly;
+
     /* Faz modificações apenas no primeiro nível de div */
     &>div {
         grid-template-columns: repeat(4, 292px);
@@ -95,5 +100,40 @@ section {
             margin-top: 8px;
             font-weight: 800;
         }
+    }
+}
+
+#ai {
+
+    grid-area: ai;
+
+    img {
+        width: 176px;
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin-block: 8px 4px;
+    }
+}
+
+aside {
+    grid-area: aside;
+}
+
+#more {
+
+    margin-top: 32px;
+
+    h3 {
+        margin-top: 8px;
+    }
+
+    img {
+        width: 72px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
     }
 }
