@@ -1,0 +1,24 @@
+#primary {
+    padding-block: 20px; /* Pega o eixo vertical em cima e em baixo */
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* nesting css - posso pegar um filho dentro do próprio pai */
+    div:nth-child(2) {
+        margin-inline: auto; /* pega esquerda e direita (horizontal) */
+    }
+
+    div:nth-child(3) {
+        justify-self: end;
+    }
+}
+
+#secondary {
+    padding-block: 14px;
+    border: solid 1px var(--stroke-color);
+    border-inline: none;
+}
